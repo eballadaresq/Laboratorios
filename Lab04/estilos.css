@@ -147,10 +147,24 @@ label{
 /* Alinear los dos cuadros */
 .flex-container{
     display: flex;
-    gap: 50px;
+    gap: 10px;
 }
 
 /* Que ocupen el mismo espacio */
 .flex-container fieldset{
     flex: 2;
 }
+
+input[type="radio"],
+input[type="checkbox"]
+{           
+    margin-right: 5px;
+}
+
+fieldset > div > div{
+    display: flex;   
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+  
