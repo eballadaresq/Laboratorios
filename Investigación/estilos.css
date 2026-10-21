@@ -1,0 +1,56 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      margin: 0;
+    }
+
+    .tarjeta {
+      background: white;
+      width: min(320px, 80vw);
+      padding: 28px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .tarjeta h1 {
+      color: #0759a5;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.18);
+    }
+
+    .tarjeta p {
+      color: #334155;
+      line-height: 1.5;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .boton {
+      background: #0878d1;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+
+    .boton:hover,
+    .boton:focus-visible {
+      background: #064b88;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tarjeta, .boton {
+        transition: none;
+      }
+    }
+  

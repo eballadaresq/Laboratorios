@@ -1,0 +1,170 @@
+header {
+  background-color: #004cc6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1:hover {
+  color: #19d842;
+  /* Cambia el color del título al pasar el mouse */
+}
+
+main {
+  padding: 20px;
+}
+
+/* id # */
+#menu {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 50px;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline;
+  margin-right: 1%;
+}
+
+/* class . */
+
+.item {
+  display: inline-block;
+  background-color: #004cc6;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+}
+
+.item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+input:focus {
+  outline: none;
+  border-color: #004cc6;
+  color: #004cc6;
+}
+
+button {
+  background-color: #004cc6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #19d842;
+}
+
+
+#video-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre los videos */
+  /* Margen o espacio encima del video*/
+}
+ 
+#video-section iframe {
+  width: 100%;
+  max-width: 600px;
+  /* Ancho máximo del video */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #727272;
+  /* Borde alrededor del video */
+}
+
+.form actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Caja principal del formulario */
+form{
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* Marco grande */
+fieldset{
+    background-color: #f8f9fa;
+    border: 2px solid #004cc6;
+    border-radius: 10px;
+    padding-right: 5%;
+    margin-bottom: 15px;
+}
+
+/* Título del cuadro */
+legend{
+    color: #004cc6;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Etiquetas */
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Cajitas de texto */
+.form-input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Cuando se hace clic en la caja */
+.form-input:focus{
+    border: 2px solid #004cc6;
+    background-color: #eef4ff;
+}
+
+/* Alinear los dos cuadros */
+.flex-container{
+    display: flex;
+    gap: 10px;
+}
+
+/* Que ocupen el mismo espacio */
+.flex-container fieldset{
+    flex: 2;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{           
+    margin-right: 5px;
+}
+
+fieldset > div > div{
+    display: flex;   
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+  
