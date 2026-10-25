@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+</head>
+<body>
+                
+<header>
+    <img class="logo" src="imagenes/logo_texto.png" alt="Logo CondoSmart">
+
+</header>
+
+
+ 
+                             
+ <nav class="nav-menu">
+    <ul class="nav-list">
+    
+<li class="menu-item"><a href="index.html">Inicio</a>
+<li class="menu-item"><a href="login.html">Iniciar Sesión</a>
+ <li class="menu-item"><a href="visitantes.html">Visitantes</a>
+ <li class="menu-item"><a href="reservas.html">Reservas</a>
+ </ul>
+</nav>
+
+<div class="container">
+ <h1>Registro de Reservas</h1>
+<p>Por favor llenar todos los espacios para una mayor seguridad.</p>
+
+<section class="formulario">
+
+  
+    <form>
+
+        
+
+     <div class="reserva">
+
+          <div class="campo">  
+            
+           <div class="mb-3">   
+        <label for="nombre">Residente:</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>
+           
+        <label for="bloque">Bloque:</label>
+        <input type="text" id="bloque" class="form-control" placeholder="Ej: A" required>
+            </div>         
+
+        <div class="mb-3">  
+        <label for="casa">Número de Casa:</label>
+        <input type="number" id="casa"  placeholder="Ej: 25" required>
+             
+        
+        <label for="area">Área Recreativa:</label>
+        <select id="area" required>
+            <option value="">Seleccione un área</option>
+            <option>Piscina</option>
+            <option>Rancho BBQ</option>
+            <option>Cancha Multiuso</option>
+            <option>Área Infantil</option>
+            <option>Zonas Verdes</option>
+            <option>Gimnasio</option>
+        </select>
+        </div>  
+
+        <div class="mb-3"> 
+        <label for="fecha">Fecha de Reserva:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="personas">Cantidad de Personas:</label>
+        <input type="number" id="personas" min="1" max="50">
+             </div> 
+            
+
+        <div class="mb-3">
+
+        <label for="horaInicio">Hora de Inicio:</label>
+        <input type="time" id="horaInicio" required>        
+
+        <label for="horaFin">Hora de Finalización:</label>
+        <input type="time" id="horaFin" required>
+            </div> 
+
+        <div class="mb-3"> 
+        <label for="comentarios">Observaciones:</label>
+        <textarea id="comentarios" rows="3" cols="90"></textarea>
+                </div>  
+
+       
+         </fieldset>
+
+          <button class="btn-reserva" type="submit">Registrar Reserva
+             </button>
+        </fieldset>
+
+           </div>
+    </form>
+
+    
+<h2>Reservas Registradas</h2>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Residente</th>
+            <th>Bloque</th>
+            <th>Casa</th>
+            <th>Área</th>
+            <th>Fecha</th>
+            <th>Personas</th>
+            <th>Hora de Inicio</th>
+            <th>Hora de Finalización</th>
+            <th>Observaciones</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </tbody>
+</table>
+
+    </section>
+</div>
+    <footer>
+    <p>&copy; 2026 Plataforma CondoSmart</p>
+    <p>Contacto: <a href="mailto:info@condosmart.com">info@condosmart.com</a></p>
+  </footer>
+
+</body>
+</html>
